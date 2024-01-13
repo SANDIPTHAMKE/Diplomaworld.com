@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main{
+    background-image: url('background.jpeg');
+    width: 100%;
+    height: 700px;
+    background-repeat: repeat-x;
+    /* display: flex; */
+}
+#webname{
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Gabriola',Times New Roman, Times, serif;
+    height: 0px;
+    display: flex;
+    position: sticky;
+    
+ }
+.navbar{
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: center; 
+    background-color: #ff4500;
+    border-bottom: 2px solid rgb(202, 255, 159);
+}
+
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    font-weight: bold;
+    position: static;
+    text-align: center;
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.navbar li a{
+    padding: 3px 20px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: white;
+}
+.navbar li a:hover{
+    background-color: white;
+    color:orangered;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.submenu{
+    display: none;
+    top: 10%;
+    position: fixed;
+}
+.submenu ul{
+    position: absolute;
+}
+
+ul li:hover .submenu{
+    display: block;
+    background-color: rgba(255, 69, 0, 0.7);
+    margin: -20px 0px 0px 0px;
+}
+ul li:hover .submenu ul li{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 0px rgb(255, 69, 0);
+    background-color: rgba(255, 0, 0, 0.7);
+    transition: 0.4 ease;
+    text-align: left;
+}
+.intro{
+    background-color: transparent;
+    border: 0px;
+    padding: 40px;
+}
+.introname{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 150px;
+}
+#intron{
+    font-size: 45px;
+}
+#basic{
+    font-size: 20px;
+}
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 0px solid #00B4CC;
+  border-right: none;
+  padding: 20px;
+  height: 20px;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.searchTerm:focus{
+  color: #000000;
+}
+
+.searchButton {
+  width: 50px;
+  height: 40px;
+  border: 0px solid #000000;
+  color: black;
+  background: #fcfcfc;
+  text-align: center;
+  color: #000000;
+  border-radius: 0 20px 20px 0;
+  padding-right: 3px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 30px;
+}
+.wrap{
+  width: 40%;
+  position: absolute;
+  margin-top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.searchicon{
+    height: 25px;
+    width: 25px;
+}
+.branch{
+    background-color: transparent;
+    border: 0px;
+    padding: 40px;
+}
+.branchname{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 69, 0);
+    font-size: 30px;
+    text-shadow: 6px 2px 7px white;
+    text-align: center;
+    margin-top: 100px;
+}
+.bran-sem{
+    margin-top: 20px;
+    margin-left: 23%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+.semester-I{
+    margin-left: 25%;
+    display: block;  
+    float: left;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(5, 5, 5);
+}
+
+.semester-I ul{
+    overflow: auto;
+}
+.semester-I li{
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.semester-I li a{
+    background-color: white;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: rgb(124, 124, 124);
+    border-radius: 30px;
+}
+.semester-I li a:hover{
+    background-color: rgba(224, 27, 165, 0.856);
+    color:rgb(29, 29, 28);
+    padding: 20px 40px;
+    border-radius: 30px;
+}
+.semester-K{
+    margin-right: 25%;
+    display: block; 
+    float: right;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(5, 5, 5);
+}
+
+.semester-K ul{
+    overflow: auto;
+}
+.semester-K li{
+    font-weight: bold;
+    position: static;
+    text-align: center;
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.semester-K li a{
+    background-color: white;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: rgb(124, 124, 124);
+    border-radius: 30px;
+}
+.semester-K li a:hover{
+    background-color: rgba(224, 27, 165, 0.856);
+    color:rgb(29, 29, 28);
+    padding: 20px 40px;
+    border-radius: 30px;
+}
